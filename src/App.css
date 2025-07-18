@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* custom t-css */
+
+.bg-purple-gradient-2 {
+  background-image: linear-gradient(94.87deg, #5d5fef 47.69%, #ff968d 129.54%);
+}
