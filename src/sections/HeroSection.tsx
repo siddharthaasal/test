@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import DataFlowDiagram from "../components/DataFlowDiagram";
+// import DataFlowDiagram from "../components/DataFlowDiagram";
 
 export default function HeroSection() {
     return (
