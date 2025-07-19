@@ -6,7 +6,8 @@ export default function HeroSection() {
         <section className="relative h-screen overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0 -z-10">
-                <div className="h-full w-full bg-radial-[at_50%_0%] from-white from-[4%] via-privue-200 via-[50%] to-privue-100 to-[100%]" />
+                {/* <div className="h-full w-full bg-radial-[at_50%_0%] from-white from-[4%] via-privue-100 via-[50%] to-white to-[100%]" /> */}
+                <div className="h-full w-full bg-white" />
 
                 {/* Vertical boundary lines */}
                 <div className="hidden md:block absolute top-0 h-full w-px bg-gradient-to-b from-[#1E1F25] to-transparent opacity-10 mix-blend-darken z-50 left-1/6" />
@@ -56,7 +57,7 @@ export default function HeroSection() {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         className="max-w-3xl mx-auto"
                     >
-                        <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-normal font-newsreader bg-gradient-to-r from-gray-900 via-privue-700 to-gray-800 bg-clip-text text-transparent">
+                        <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-normal font-open-sans bg-gradient-to-r from-gray-900 via-privue-700 to-gray-800 bg-clip-text text-transparent">
                             Empowering businesses{" "}
                             <br className="hidden sm:inline" />
                             through Intelligent Data

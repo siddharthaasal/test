@@ -15,7 +15,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="fixed inset-x-0 top-0 z-10 px-2 sm:px-4">
+        <header className="fixed inset-x-0 top-0 z-10 px-2 sm:px-4 font-open-sans">
 
             <div
                 className={`absolute inset-0 transition-all duration-300 ${isScrolled
@@ -37,8 +37,8 @@ export default function Navbar() {
                             height={50}
                             className="h-10 w-auto"
                         />
-                        <span className="text-base sm:text-lg font-semibold text-privue-800 tracking-tight">
-                            Privue
+                        <span className="text-base sm:text-lg font-medium text-privue-900 tracking-tight">
+                            PRIVUE
                         </span>
                     </a>
 
