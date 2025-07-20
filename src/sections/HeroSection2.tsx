@@ -1,3 +1,5 @@
+// grid background, announcement, heading, subtext, cta button
+
 import { cn } from "../lib/utils";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import { motion } from "framer-motion";
@@ -12,6 +14,7 @@ import {
 export default function HeroSection2() {
     return (
         <section className="relative flex min-h-screen items-center justify-center rounded-lg bg-background p-6 md:p-20">
+            {/* grid backgorund */}
             <GridPattern
                 width={180}
                 height={180}
@@ -24,11 +27,11 @@ export default function HeroSection2() {
                     [8, 2],
                 ]}
                 className={cn(
-                    "absolute -skew-y-0 inset-0 opacity-60 [mask-image:linear-gradient(to_bottom_left,white,transparent)]"
+                    "absolute inset-0 opacity-60 [mask-image:linear-gradient(to_bottom_left,white,transparent)]"
                 )}
             />
 
-            {/* content -> (banner, heading+subtext, cta) */}
+            {/* content -> (anouncement, heading+subtext, cta) */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center gap-4 h-full">
                 {/* Banner */}
                 <motion.div
@@ -43,7 +46,6 @@ export default function HeroSection2() {
                             Start building clarity with your data →
                         </AnnouncementTitle>
                     </Announcement>
-
                 </motion.div>
 
                 {/* Heading */}
@@ -55,7 +57,7 @@ export default function HeroSection2() {
                 >
                     <div className="text-center">
                         {/* <h1 className="text-[72px] font-bold leading-24 tracking-tight font-open-sans text-privue-900"> */}
-                        <h1 className="text-[clamp(2rem,4vw,3.5rem)] font-bold tracking-tight font-open-sans  text-privue-900">
+                        <h1 className="text-[clamp(2rem,4vw,3.5rem)] font-bold tracking-tight font-open-sans text-black">
                             <span className="block">Empowering businesses</span>
                             {/* <span className="block text-privue-900">through</span> */}
                             <span className="block">through Intelligent Data</span>
@@ -63,16 +65,13 @@ export default function HeroSection2() {
                     </div>
                 </motion.div>
 
-
-
-
                 {/* Subtext */}
                 <motion.p
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     // className="text-[24px] text-privue-600 font-medium font-open-sans max-w-2xl"
-                    className="text-lg text-privue-600 font-medium font-open-sans max-w-2xl"
+                    className="text-lg text-neutral-700 font-medium font-open-sans max-w-2xl"
                 >
                     Discover data-backed signals for smarter decisions.
                     Mitigate risk and unlock high-value relationships.
