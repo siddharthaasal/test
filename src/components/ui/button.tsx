@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-privue-700 text-white hover:bg-privue-800",
+        default: "border bg-privue-700 text-white hover:bg-privue-800",
         outline: "border border-privue-700 text-privue-700 hover:bg-privue-100",
         ghost: "text-privue-700 hover:bg-privue-100",
         link: "text-privue-800 underline-offset-4 hover:underline",

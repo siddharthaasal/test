@@ -43,9 +43,9 @@ export default function Navbar2() {
 
     return (
         <header className="fixed top-0 inset-x-0 z-50 font-open-sans">
-            <div className="relative w-full">
+            <div className="relative w-100%">
                 {/* Blur layer */}
-                <div className={`absolute inset-0 pointer-events-none backdrop-blur-xl bg-white/20 transition-all duration-300 ${isScrolled ? "border-b border-white/30 shadow-md" : "shadow-sm"
+                <div className={`absolute inset-0 pointer-events-none ${isScrolled ? "border-b backdrop-blur-xl transition-all duration-300  bg-white/20 border-white/30 shadow-md" : "backdrop-blur-sm  bg-white/10 border-white/20  shadow-sm"
                     }`} />
 
                 {/* Actual navbar content */}
@@ -131,7 +131,7 @@ export default function Navbar2() {
                     {/* CTA Buttons */}
                     <div className="hidden lg:flex gap-2 flex-1 justify-end">
                         <Button variant="outline"> <a href="/login">Log in</a></Button>
-                        <Button> <a href="/signup">Get Started</a></Button>
+                        <Button> <a href="/signup" className="shadow-text-md">Get Started</a></Button>
                     </div>
 
                 </nav>
