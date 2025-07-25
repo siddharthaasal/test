@@ -63,7 +63,8 @@ const caseStudies: InfoProps[] = [
         buttonText: "Read Case Study",
         buttonLink: "#",
         badgeText: "Case Study",
-        imageURL: "https://images.pexels.com/photos/24244234/pexels-photo-24244234.jpeg"
+        imageURL: "https://images.pexels.com/photos/242442git 34/pexels-photo-24244234.jpeg"
+        // imageURL: "https://privue.ai/images/casestory3.jpg"
     },
     {
         title: "Enhancing Supply Chain Resilience",
